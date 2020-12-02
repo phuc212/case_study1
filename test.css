@@ -1,0 +1,345 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header3 ul li:hover a{
+    color: #f1c40f;
+
+}
+
+.bnt{
+    width: 96px;
+    height: 34px;
+    text-align: center;
+}
+.content img{
+    width: 60%;
+}
+.content>div:hover{
+    transform: scale(1.1);
+}
+
+.content>div{
+    transition: 0.2s;
+}
+
+.cart{
+font-size: 26px;
+}
+.addcart{
+    cursor: pointer;
+  outline: none;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: all 0.2s ease-in-out;
+  background:#32ff7e;
+  font-size: 12px;
+}
+.header.header3{
+    padding: 100px;
+}
+
+a{
+    text-decoration: none;
+    padding: 20px;
+}
+/* Tag elements */
+
+h2 {
+    text-align: center;
+}
+.sidebar img{
+    width: 100%;
+}
+.news-and-activites img{
+    width: 100%;
+ }
+ .brand-name img{
+     width: 100%;
+ }
+
+/* Class Elements */
+.grid{
+    display : grid;
+    grid-template-columns: 1fr 90% 1fr;
+
+    grid-template-areas: 
+    'view view view'
+    '. header .'
+    'sidebar sidebar sidebar'
+    '. Our . '
+    '. content .'
+    '. news-and-activites .'
+    '. brand-name .'
+    '. infor .'
+    ;
+}
+.news-and-activites .news-activites-content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    'news-1 news-2 news-3 news-4'
+    'news-5 news-6 news-7 news-8'
+    ;
+    column-gap: 50px;
+    padding: 30px 0;
+}
+
+
+
+.news-activites-content>div{
+    text-align: center;
+    transition: 0.3s;
+}
+
+.news-activites-content>div:hover{
+    transform: scale(1.1);
+}
+
+.news-activites-content .news-1{
+    grid-area: news-1;
+}
+
+.news-activites-content>div>a:nth-child(3)>p{
+    color: red;
+    
+}
+
+.news-activites-content .news-2{
+    grid-area: news-2;
+}
+
+.news-activites-content .news-3{
+    grid-area: news-3;
+}
+
+.news-activites-content .news-4{
+    grid-area: news-4;
+}
+
+.news-activites-content .news-5{
+    grid-area: news-5;
+
+}.news-activites-content .news-6{
+    grid-area: news-6;
+}
+.news-activites-content .news-7{
+    grid-area: news-7;
+}
+.news-activites-content .news-8{
+    grid-area: news-8;
+}
+.brand-name .brand-activites-content{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: 
+    'brand-1 brand-2 brand-3 brand-4 brand-5 brand-6'
+    'brand-7 brand-8 brand-9 brand-10 brand-11 brand-12'
+    ;
+    column-gap: 50px;
+    padding: 30px 0;
+}
+
+.news-activites-content .brand-1{
+    grid-area: brand-1;
+}
+
+.news-activites-content .brand-2{
+    grid-area: brand-2;
+}
+
+.news-activites-content .brand-3{
+    grid-area: brand-3;
+}
+
+.news-activites-content .brand-4{
+    grid-area: brand-4;
+}
+
+.news-activites-content .brand-5{
+    grid-area: brand-5;
+
+}.news-activites-content .brand-6{
+    grid-area: brand-6;
+}
+.news-activites-content .brand-7{
+    grid-area: brand-7;
+}
+.news-activites-content .brand-8{
+    grid-area: brand-8;
+}
+.news-activites-content .brand-9{
+    grid-area: brand-9;
+}
+.news-activites-content .brand-10{
+    grid-area: brand-10;
+}
+.news-activites-content .brand-11{
+    grid-area: brand-11;
+}
+.news-activites-content .brand-12{
+    grid-area: brand-12;
+}
+
+.grid .view{
+    grid-area: view;
+    display: grid;
+    grid-template-columns: 15% 70% 1fr 1fr;
+    grid-template-areas: 
+    'view1 view2 view3 view4'
+    ;
+    background-color: black;
+    color: white;
+}
+
+.grid .header{
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 1fr 57%;
+    grid-template-areas: 
+    'header1 header2 header3'
+    ;}
+    
+.grid .content{
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-areas: 
+    'content1 content2 content3 content4 content5 content6'
+    ;
+    column-gap: 50px;
+    padding: 30px 0;
+}
+
+.content>div{
+    text-align: center;
+}
+    
+
+.content .content1{
+    grid-area: content1;
+    }
+.content .content2{
+     grid-area: content2;
+    }
+.content .content3{
+     grid-area: content3;
+    }
+.content .content4{
+     grid-area: content4;
+     }
+.content .content5{
+     grid-area: content5;
+     }
+ .content .content6{
+    grid-area: content6;
+    }
+                                                            
+
+.header .header1{
+        grid-area: header1;
+    }
+.header .header2{
+    grid-area: header2;
+} 
+.header .header3{
+    grid-area: header3;
+}
+.header {
+        font-size: 0.9rem;
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+  }
+.header ul:nth-child(1) {
+        list-style-type: none;
+        font-weight: bold;
+        display: flex;
+  }
+  
+.header a {
+        color: #2f2f2f;
+        display: block;
+        padding: 30px 5px;
+  }
+
+.Our > p {
+    position: relative;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    color: rgb(51, 207, 45);
+    font-family: "Lemonada", cursive;
+    padding: 20px;
+  }
+.Our > span {
+    position: relative;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    font-family: "Lemonada", cursive;
+  }
+
+  
+.test-logo {
+    width: 172px;
+    height: 181px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+
+.view .view1{
+    grid-area: view1;
+}
+
+.view .view2{
+    grid-area: view2;
+}
+
+.view .view3{
+    grid-area: view3;
+}
+.view .view4{
+    grid-area: view4;
+}
+
+.grid .header{
+    grid-area: header;
+}
+.grid .sidebar{
+    grid-area: sidebar;
+}
+.grid .content{
+    grid-area: content;
+}
+.grid .news-and-activites{
+    grid-area: news-and-activites;
+}
+.grid .brand-name{
+    grid-area: brand-name;
+}
+.grid .Our{
+    grid-area: Our;
+}
+.grid .infor{
+    grid-area: infor;
+}
+
+.brand-activites-content>div>a>img:hover{
+    color: black;
+}
+.view1 {
+    padding: 10px;
+   text-align:right;
+}
