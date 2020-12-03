@@ -79,7 +79,8 @@ h2 {
     '. content .'
     '. news-and-activites .'
     '. brand-name .'
-    '. infor .'
+    'infor infor infor'
+    '. end .'
     ;
 }
 .news-and-activites .news-activites-content{
@@ -98,6 +99,7 @@ h2 {
 .news-activites-content>div{
     text-align: center;
     transition: 0.3s;
+    margin: 10px;
 }
 
 .news-activites-content>div:hover{
@@ -199,6 +201,74 @@ h2 {
     background-color: black;
     color: white;
 }
+.grid .end{
+    grid-area: end;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    'end1'
+    'end2'
+    'end3'    
+    ;
+}
+.end .end1{
+    grid-area: end1;
+}
+.end .end2{
+    grid-area: end2;
+}
+.end .end3{
+    grid-area: end3;
+}
+.end ul{
+    text-align: center;
+    list-style-type: none;
+    display: flex;
+}
+.end3 img{
+    width: 10%;
+}
+.grid .infor{
+    grid-area: infor;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    'infor1 infor2 infor3'
+    ;
+    background-color: #2d3436;
+   
+}
+.infor>div>a>i{
+    color: white;
+
+}
+.infor {
+    
+    height: 55px;
+    padding-right: 90px;
+    font-size: 16px;
+    padding-left: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.infor>div:hover{
+    transform: scale(1.0);
+}
+
+.infor>div{
+    transition: 0.3s;
+}
+
+.infor .infor1{
+    grid-area: infor1;
+}
+.infor .infor1{
+    grid-area: infor1;
+}
+.infor .infor1{
+    grid-area: infor1;
+}
 
 .grid .header{
     grid-area: header;
@@ -272,20 +342,17 @@ h2 {
   }
 
 .Our > p {
-    position: relative;
     font-size: 30px;
     display: flex;
     justify-content: center;
     color: rgb(51, 207, 45);
-    font-family: "Lemonada", cursive;
     padding: 20px;
   }
 .Our > span {
-    position: relative;
-    font-size: 13px;
+    font-size: 15px;
     display: flex;
     justify-content: center;
-    font-family: "Lemonada", cursive;
+
   }
 
   
@@ -313,6 +380,9 @@ h2 {
 .view .view4{
     grid-area: view4;
 }
+.grid .end{
+    grid-area: end;
+}
 
 .grid .header{
     grid-area: header;
@@ -331,9 +401,6 @@ h2 {
 }
 .grid .Our{
     grid-area: Our;
-}
-.grid .infor{
-    grid-area: infor;
 }
 
 .brand-activites-content>div>a>img:hover{
